@@ -1,5 +1,8 @@
 #pragma once
 #include <Arduino.h>
+#ifndef MAX_FIELDS
+#define MAX_FIELDS 0
+#endif
 
  class KrokoTS
  {
@@ -11,12 +14,11 @@
     void tick();
 
  private:
-   void (*p_function[8])(void);   // указатель на p_function
-   int functionattrs[8][4];
+   void (*p_function[MAX_FIELDS])(void);   // указатель на p_function
+   int functionattrs[MAX_FIELDS][4];
  	byte _x1;
  	byte _x2;
  	byte _y1;
  	byte _y2;
 
  };
-

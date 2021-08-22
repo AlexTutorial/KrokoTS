@@ -1,3 +1,5 @@
+#define MAX_FIELDS 2
+
 #include<KrokoTS.h>
 
 #define X1 A0

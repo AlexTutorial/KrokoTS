@@ -51,8 +51,7 @@ void KrokoTS::attachClick(byte id, int minX, int maxX, int minY, int maxY, void 
 void KrokoTS::tick(){
 	 int x_pos = KrokoTS::getX();
 	 int y_pos = KrokoTS::getY();
-
-	 for(int i = 0; i<9; i++){
+	 for(int i = 0; i<MAX_FIELDS; i++){
 
 	 	int funcattr[4];
 	 	for(int j = 0; j<5; j++) {
