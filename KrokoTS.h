@@ -1,8 +1,6 @@
 #pragma once
 #include <Arduino.h>
-#ifndef MAX_FIELDS
-#define MAX_FIELDS 0
-#endif
+#define MAX_FIELDS 5
 
  class KrokoTS
  {
